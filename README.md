@@ -1,4 +1,4 @@
-# <p align="center"> Guestbook</p>
+# <p align="center"> Backed Practice</p>
 
 <p>
 본 저장소에는 Node.js와 Vue를 기반으로한 간단한 홈페이지입니다. 백엔드 서버를 프론트엔드의 데이터 연결, REST API를 이용한 CRUD 기능등을 구현해 보았습니다. 
