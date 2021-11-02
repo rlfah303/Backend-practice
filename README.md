@@ -41,6 +41,9 @@ Software Engineer<br/>
     }
    ```
    - Vue router에 각각의 컴포넌트의 endpoint 를 지정
+  
+   index.js
+   
    ```javascript
       import Vue from "vue";
       import VueRouter from "vue-router";
@@ -76,6 +79,9 @@ Software Engineer<br/>
 <br/>
 2. Axios와 Vue를 연동한 서버와 통신
   - axios를 통해 비동기로 get,post 기능구현
+ 
+  post.js
+  
     ```javascript
         import axios from "axios";
         const API_URL = "http://localhost:3000/api/posts";
