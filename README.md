@@ -19,6 +19,8 @@ Software Engineer<br/>
 ## :computer: Code
 
 1.Vue를 활용한 SPA 구성
+  <br/>
+  App.vue
   ```javascript
      <template>
        <div id="app">
