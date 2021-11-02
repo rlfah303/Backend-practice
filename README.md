@@ -18,8 +18,9 @@ Software Engineer<br/>
 
 ## :computer: Code
 
-1.Vue를 활용한 SPA 구성
+1. Vue를 활용한 SPA 구성
   <br/>
+  - 컴포넌트 생성후 App.vue 파일에 렌더링  
   App.vue
   ```javascript
      <template>
@@ -38,6 +39,7 @@ Software Engineer<br/>
       }
     }
    ```
+   
 2. Axios와 Vue를 연동한 서버와 통신
 3. Passport와 JWT를 이용한 Authentication
 
