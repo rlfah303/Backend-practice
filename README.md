@@ -18,6 +18,11 @@ Software Engineer<br/>
 
 ## :computer: Code
 
+1.Vue를 활용한 SPA 구성
+2. Axios와 Vue를 연동한 서버와 통신
+3. Passport와 JWT를 이용한 Authentication
+
+
 ## :hammer_and_wrench: 사용된 기술
 > + Vue.js https://vuejs.org/
 > + Express https://expressjs.com/
