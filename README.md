@@ -106,7 +106,7 @@ Software Engineer<br/>
 3. Passport와 JWT를 이용한 Authentication
 
 <br/>
-
+  - Authentication에 따른 user_id verify
   passport.js
   ```javascript
       const JwtStrategy = require('passport-jwt').Strategy
@@ -134,6 +134,29 @@ Software Engineer<br/>
           }))
       }
   ```
+   - 비밀번호 확인후 JWT를 이용한 login
+   auth.js
+   ```javascript
+     router.post('/login', (req,res) => {
+        User.findOne({email: req.body.email}, function(err,user){
+          if (err) throw err;
+          if (!user){
+              res.status(401).send({succuss: false, message: "User not found."})
+          }else{
+              user.comparePassword(req.body.password, function(err, isMatch){
+                  if (isMatch){
+                      const tokenObj = { _id: user._id, email: user.email }
+                      const token = jwt.sign(tokenObj, config.secret)
+                      res.send({succuss:true, token: 'JWT '+token})
+                  }else{
+                      res.status(401).send({succuss: false, message: 'Wrong Password'})
+                  }
+              })
+          }
+        })
+      })
+   ```
+   
 
 ## :hammer_and_wrench: 사용된 기술
 > + Vue.js https://vuejs.org/
