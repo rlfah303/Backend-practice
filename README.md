@@ -20,7 +20,9 @@ Software Engineer<br/>
 
 1. Vue를 활용한 SPA 구성
   <br/>
+  
   - 컴포넌트 생성후 App.vue 파일에 렌더링  
+  
   App.vue
   ```javascript
      <template>
