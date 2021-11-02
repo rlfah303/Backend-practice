@@ -81,8 +81,7 @@ Software Engineer<br/>
   - axios를 통해 비동기로 get,post 기능구현
  
   post.js
-  
-    ```javascript
+  ```javascript
         import axios from "axios";
         const API_URL = "http://localhost:3000/api/posts";
 
@@ -102,7 +101,7 @@ Software Engineer<br/>
                 });
             }
         }
-    ```
+  ```
 <br/>
 3. Passport와 JWT를 이용한 Authentication
 
