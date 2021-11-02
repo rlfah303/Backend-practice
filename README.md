@@ -105,7 +105,6 @@ Software Engineer<br/>
 <br/>
 3. Passport와 JWT를 이용한 Authentication
 
-<br/>
   - Authentication에 따른 user_id verify
   
   passport.js
