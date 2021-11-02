@@ -63,6 +63,8 @@ Software Engineer<br/>
           import(/* webpackChunkName: "about" */ "../views/About.vue")
       },
       ....
+      ....
+      ....
       const router = new VueRouter({
         mode:"history",
         routes:routes,
@@ -71,8 +73,32 @@ Software Engineer<br/>
       export default router;
    ```
    
-   
+<br/>
 2. Axios와 Vue를 연동한 서버와 통신
+  - axios를 통해 비동기로 get,post 기능구현
+    ```javascript
+        import axios from "axios";
+        const API_URL = "http://localhost:3000/api/posts";
+
+        class PostService {
+            static getPosts(token) {
+                return new Promise((resolve, reject) =>{
+                    axios
+                    .get(API_URL, { headers: { authorization: token } })
+                    .then((res)=>{
+                        console.log("Service returned success");
+                        resolve(res.data);
+                    })
+                    .catch((err)=>{
+                        console.log("failed")
+                        reject(err);
+                    });
+                });
+            }
+        }
+    ```
+    
+<br/>
 3. Passport와 JWT를 이용한 Authentication
 
 
