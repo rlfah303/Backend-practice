@@ -82,25 +82,25 @@ Software Engineer<br/>
  
   post.js
   ```javascript
-        import axios from "axios";
-        const API_URL = "http://localhost:3000/api/posts";
-
-        class PostService {
-            static getPosts(token) {
-                return new Promise((resolve, reject) =>{
-                    axios
-                    .get(API_URL, { headers: { authorization: token } })
-                    .then((res)=>{
-                        console.log("Service returned success");
-                        resolve(res.data);
-                    })
-                    .catch((err)=>{
-                        console.log("failed")
-                        reject(err);
-                    });
-                });
+      import axios from "axios";
+      const API_URL = "http://localhost:3000/api/posts";
+ 
+      class PostService {
+          static getPosts(token) {
+              return new Promise((resolve, reject) =>{
+                  axios
+                  .get(API_URL, { headers: { authorization: token } })
+                  .then((res)=>{
+                      console.log("Service returned success");
+                      resolve(res.data);
+                  })
+                  .catch((err)=>{
+                      console.log("failed")
+                      reject(err);
+                  });
+              });
             }
-        }
+       }
   ```
 <br/>
 3. Passport와 JWT를 이용한 Authentication
