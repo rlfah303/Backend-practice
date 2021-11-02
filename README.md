@@ -104,7 +104,9 @@ Software Engineer<br/>
   ```
 <br/>
 3. Passport와 JWT를 이용한 Authentication
+
 <br/>
+
   passport.js
   ```javascript
       const JwtStrategy = require('passport-jwt').Strategy
