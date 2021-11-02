@@ -19,6 +19,23 @@ Software Engineer<br/>
 ## :computer: Code
 
 1.Vue를 활용한 SPA 구성
+  ```javascript
+     <template>
+       <div id="app">
+          <div id="nav">
+            <TheNavigation />
+          </div>
+        <router-view :key="$route.fullPath" />
+      </div>
+    </template>
+    <script>
+    import TheNavigation from "@/components/TheNavigation";
+    export default {
+      components:{
+        TheNavigation
+      }
+    }
+   ```
 2. Axios와 Vue를 연동한 서버와 통신
 3. Passport와 JWT를 이용한 Authentication
 
