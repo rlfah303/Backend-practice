@@ -107,7 +107,9 @@ Software Engineer<br/>
 
 <br/>
   - Authentication에 따른 user_id verify
+  
   passport.js
+  
   ```javascript
       const JwtStrategy = require('passport-jwt').Strategy
       const ExtractJwt = require('passport-jwt').ExtractJwt
@@ -134,8 +136,11 @@ Software Engineer<br/>
           }))
       }
   ```
+  
    - 비밀번호 확인후 JWT를 이용한 login
+   
    auth.js
+   
    ```javascript
      router.post('/login', (req,res) => {
         User.findOne({email: req.body.email}, function(err,user){
